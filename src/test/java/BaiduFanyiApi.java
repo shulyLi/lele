@@ -16,7 +16,7 @@ import java.io.IOException;
 public class BaiduFanyiApi {
     private static String URI = "http://fanyi.baidu.com";
     private HttpHost httpHost = HttpHost.create(URI);
-    private HttpClient httpClient = HttpClientBuilder.create().build();
+    private HttpClient httpClient = HttpClientFactory.create();
 
     private static final String [] KEY = {"word_proto",  "word_pl", "word_ing", "word_done", "word_past"};
 
