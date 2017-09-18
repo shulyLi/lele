@@ -12,10 +12,7 @@ import java.io.RandomAccessFile;
 
 import static org.newbee.lele.DataCenter.primaryStage;
 
-/**
- * @author shuly
- * @date 2017/9/17.
- */
+
 public class QueryFileHandler implements EventHandler<ActionEvent> {
     private final FileChooser fileChooser = new FileChooser();
     public QueryFileHandler() {
