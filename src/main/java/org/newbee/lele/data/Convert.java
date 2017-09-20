@@ -31,6 +31,8 @@ class Convert {
             }
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("单词同步完毕");
         }
     }
     static String convertWord(String word) {

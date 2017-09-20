@@ -5,8 +5,7 @@ import java.util.*;
 
 public class StringTool {
     private final static Set<Character> data = new LinkedHashSet<>();
-    private final static String fg = " \n\t\r,.?:" +
-            ";\"\'=\\/<>!#$%^&*()_+-=~`";
+    private final static String fg = " \n\t\r,.?:;|\"\'=\\/<>!#$%^&*()_+-=~`";
     static {
         for(int i = 0 ; i < fg.length() ; ++i) {
             data.add(fg.charAt(i));
@@ -42,7 +41,7 @@ public class StringTool {
     }
 
     public static void main(String[] args) {
-        for(String s : StringTool.splitLineWord("food  'foot   @#$ two three    \n and\t\r\"  ")) {
+        for(String s : StringTool.splitLineWord("panel||panels|panelling\",\"paneling|panelled\",\"paneled|panelled\",\"paneled\n")) {
             System.out.println("+" + s + "+");
         }
     }
