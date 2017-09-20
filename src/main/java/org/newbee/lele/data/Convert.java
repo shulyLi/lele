@@ -12,7 +12,7 @@ class Convert {
     private static Map<String, String> convert = new HashMap<>();
 
     static {
-        URL url = ClassLoader.getSystemClassLoader().getResource("dataConvert");
+        URL url = ClassLoader.getSystemClassLoader().getResource("merge.result");
         if (url == null) {
             System.out.println("我擦不可能啊 url is null");
             System.exit(-1);
